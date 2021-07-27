@@ -1,5 +1,5 @@
 {
-  "name": "postcss-px-to-viewport",
+  "name": "@tttxdxd41/postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
   "version": "1.1.1",
   "author": "Dmitry Karpunin <koderfunk@gmail.com>",
@@ -25,7 +25,8 @@
     "postcss-plugin"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "object-assign": ">=4.0.1"
