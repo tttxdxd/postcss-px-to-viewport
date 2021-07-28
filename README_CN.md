@@ -5,6 +5,23 @@
 
 将px单位转换为视口单位的 (vw, vh, vmin, vmax) 的 [PostCSS](https://github.com/postcss/postcss) 插件.
 
+## 支持 postcss 8
+
+### 使用方法
+
+```js
+
+module.exports = {
+  plugins: {
+    '@tttxdxd41/postcss-px-to-viewport': {
+      // 相关配置
+      // viewportWidth 支持 number 与 函数类型。 函数可根据传入不同的文件，返回不同的宽度值
+    }
+  }
+}
+
+```
+
 ## 简介
 
 如果你的样式需要做根据视口大小来调整宽度，这个脚本可以将你CSS中的px单位转化为vw，1vw等于1/100视口宽度。
@@ -27,7 +44,7 @@
   padding-bottom: 10px;
   /* Any other comment */
   border: 1px solid black;
-  margin-bottom: 1px;
+  margin-bottom: 1px; 
   font-size: 20px;
   line-height: 30px;
 }
